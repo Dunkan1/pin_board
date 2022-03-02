@@ -25,6 +25,11 @@ class PinsController < ApplicationController
     end
 
     def update
+        if @pin.update(pin_params)
+            redirect_to @pin, notice: "Pin was succesfully created"
+        else
+            render 'edit'
+        end
     end
 
     def destroy 
