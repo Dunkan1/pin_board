@@ -30,7 +30,7 @@ gem 'haml', '~> 4.0.5'
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'simple_form', '~> 3.0.2'
 gem 'devise', '~> 4.4.0'
-
+gem 'paperclip', '~> 4.2.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
