@@ -34,6 +34,15 @@ gem 'paperclip', '~> 4.2.0'
 gem 'masonry-rails', '~> 0.2.1'
 gem 'acts_as_votable', '~> 0.10.0'
 
+# not requested
+gem 'rspec-rails', ">= 3.9.0", group: :test
+gem 'capybara', group: :test
+
+# requested
+gem 'simplecov', require: false, group: :test
+gem 'minitest-rails', '~> 2.2.1', group: :test
+gem 'minitest-reporters', '~>1.4.2', group: :test
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

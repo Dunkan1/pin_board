@@ -12,7 +12,7 @@ class PinsController < ApplicationController
 
     def create
         @pin = current_user.pins.build(pin_params)
-
+        # byebug
         if @pin.save
             redirect_to @pin, notice: "succesfully created new pin"
         else
@@ -27,6 +27,7 @@ class PinsController < ApplicationController
     end
 
     def update
+        # byebug
         if @pin.update(pin_params)
             redirect_to @pin, notice: "Pin was succesfully created"
         else
@@ -44,6 +45,7 @@ class PinsController < ApplicationController
         redirect_to root_path
     end
 
+    # --------------------------------------------------------------
     private
 
     def pin_params

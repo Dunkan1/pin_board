@@ -1,0 +1,107 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/mrf/dev/LEARNING/RubyOnRails/pin_board/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/mrf/dev/LEARNING/RubyOnRails/pin_board/app/models/pin.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/mrf/dev/LEARNING/RubyOnRails/pin_board/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/mrf/dev/LEARNING/RubyOnRails/pin_board/app/controllers/pins_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1646855915
+  }
+}
