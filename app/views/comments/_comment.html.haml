@@ -1,0 +1,22 @@
+= div_for(comment) do
+	.comments_wrapper.clearfix
+		%div
+			.pull-left
+				%div
+					.lead
+						%p
+							= comment.body
+					%p
+						%small
+							Submitted
+							%strong
+								= time_ago_in_words(comment.created_at)
+								ago
+							by 
+							= comment.user.email
+		.btn-group.pull-right
+			%div
+				- if comment.user == current_user
+					.btn.btn-sm.btn-default
+						#coolor
+							= link_to 'Destroy', comment, remote: true, method: :delete, data: { confirm: 'Are you sure?' }
