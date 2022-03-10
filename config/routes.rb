@@ -7,8 +7,10 @@ Rails.application.routes.draw do
     member do
       put "like", to: "pins#upvote"
       # put 'pinsasdf', to: 'piasdfns#create', as: 'my_new_article_in_member'
+      # post "comment", to: "comments#create"
     end
     resources :comments
+    post "comment", to: "comments#create", as: "comment_creation"
   end
   
   post '/pins', to: 'pins#create', as: 'create_pin'

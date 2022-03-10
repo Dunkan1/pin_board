@@ -21,6 +21,8 @@ class PinsController < ApplicationController
     end
 
     def show
+        @user_id = current_user.id
+        @pin_id = @pin.id
     end
 
     def edit
