@@ -28,6 +28,16 @@ var assign_evaluation = function (dom_element) {
       // console.log("========================");
       $(".form-control").val('');
       $("#comments").append(data_);
+      var cuenta = $("#cuenta");
+
+      var comments_count = Number(cuenta.text().trim().split(" ")[0]);
+      if (comments_count < 54740991) {
+        comments_count+=1;
+
+      } else {
+        comments_count=54740991;
+      };
+      cuenta.replaceWith("<h3 id=\"cuenta\">"+comments_count+"  Comments</h3>")
     },
     error: function () {
       console.log("ERROR");

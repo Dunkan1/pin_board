@@ -1,4 +1,14 @@
 <% if @is_destroyed %>
   $('#comment_<%= @id_ %>').remove();
+  var cuenta = $("#cuenta");
+
+  var comments_count = Number(cuenta.text().trim().split(" ")[0]);
+  if (comments_count > 0) {
+    comments_count-=1;
+
+  } else {
+    comments_count=0;
+  };
+  cuenta.replaceWith("<h3 id=\"cuenta\">"+comments_count+"  Comments</h3>");
 <% else %>
 <% end %>
