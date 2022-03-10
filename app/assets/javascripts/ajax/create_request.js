@@ -22,12 +22,12 @@ var assign_evaluation = function (dom_element) {
     url: '/pins/'+pin_id+'/comments',
     type: "POST",
     data: { pin_id: pin_id, comment: {pin_id: pin_id, body: formText, user_id: user_id }},
-    success: function (data) {
-      console.log("========================");
+    success: function (data_) {
+      // console.log("========================");
+      // console.log(data);
+      // console.log("========================");
       $(".form-control").val('');
-
-      // TODO: agregar nuevo comentario en el html
-      
+      $("#comments").append(data_);
     },
     error: function () {
       console.log("ERROR");

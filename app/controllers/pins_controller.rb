@@ -21,7 +21,11 @@ class PinsController < ApplicationController
     end
 
     def show
-        @user_id = current_user.id
+        if current_user != nil
+            @user_id = current_user.id
+        else
+            @user_id = nil
+        end
         @pin_id = @pin.id
     end
 

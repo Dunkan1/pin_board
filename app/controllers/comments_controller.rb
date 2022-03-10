@@ -10,15 +10,15 @@ class CommentsController < ApplicationController
     @comment.user = current_user
     @comment.save
 
-    # respond_to do |format|
-    #   if @comment.save
-    #     format.html { redirect_to @pin, notice: 'Comment was successfully created.' }
-    #     format.json { render :show, status: :created, location: @comment }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @comment.errors, status: :unprocessable_entity }
-    #   end
-    # end
+    respond_to do |format|
+      if @comment.save
+        format.html { render partial: "comments/comment", locals: {comment: @comment}, notice: 'Comment was successfully created.' }
+        format.json { render :show, status: :created, location: @comment }
+      else
+        format.html { render pins_path }
+        format.json { render json: @comment.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   # PATCH/PUT /comments/1
