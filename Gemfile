@@ -34,6 +34,11 @@ gem 'paperclip', '~> 4.2.0'
 gem 'masonry-rails', '~> 0.2.1'
 gem 'acts_as_votable', '~> 0.10.0'
 
+# Variables de ambiente para development
+gem 'figaro'
+# Storage en Amazon
+gem 'aws-sdk', '~> 2.3'
+
 # not requested
 gem 'rspec-rails', ">= 3.9.0", group: :test
 gem 'capybara', group: :test
