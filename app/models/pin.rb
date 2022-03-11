@@ -4,7 +4,7 @@ class Pin < ActiveRecord::Base
     belongs_to :user
     has_many :comments
 
-    has_attached_file :image, styles: {medium: "300x300>"},
+    has_attached_file :image, styles: {medium: "300x300>", large: "800x800"},
     :s3_protocol => "https",
     :s3_host_name => ENV["S3_HOST_NAME"],
     :path => ENV["S3_PATH"],
