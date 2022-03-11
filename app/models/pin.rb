@@ -8,6 +8,7 @@ class Pin < ActiveRecord::Base
     :s3_protocol => "https",
     :s3_host_name => ENV["S3_HOST_NAME"],
     :path => ENV["S3_PATH"],
+    :bucket => ENV["S3_BUCKET"],
     :storage => "s3",
     :s3_region => ENV["AWS_REGION"]
     validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
